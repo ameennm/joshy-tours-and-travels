@@ -3,7 +3,7 @@
     position: relative;
     height: 100vh;
     min-height: 600px;
-    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2073&q=80');
+    background-image: url('https://images.pexels.com/photos/346885/pexels-photo-346885.jpeg?auto=compress&cs=tinysrgb&w=2000');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -122,17 +122,17 @@
     background-position: center;
 }
 
-/* Stand-in background images from Unsplash (can be replaced with actual user assets later) */
+/* Stand-in background images from Pexels (can be replaced with actual user assets later) */
 .transport-bg {
-    background-image: url('https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80');
+    background-image: url('https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800');
 }
 
 .packages-bg {
-    background-image: url('https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?auto=format&fit=crop&w=800&q=80');
+    background-image: url('https://images.pexels.com/photos/338515/pexels-photo-338515.jpeg?auto=compress&cs=tinysrgb&w=800');
 }
 
 .honeymoon-bg {
-    background-image: url('https://images.unsplash.com/photo-1543731068-7e0f5beff43a?auto=format&fit=crop&w=800&q=80');
+    background-image: url('https://images.pexels.com/photos/1024976/pexels-photo-1024976.jpeg?auto=compress&cs=tinysrgb&w=800');
 }
 
 .service-content {
