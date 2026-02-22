@@ -1,0 +1,42 @@
+.story-content {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc;
+    text-align: justify;
+}
+
+.grid-factors {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.factor {
+    background: var(--color-surface);
+    padding: 40px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(189, 147, 68, 0.2);
+    transition: var(--transition-smooth);
+}
+
+.factor:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+    box-shadow: 0 5px 20px rgba(189, 147, 68, 0.2);
+}
+
+.factor h3 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.factor p {
+    color: var(--color-secondary-white);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}

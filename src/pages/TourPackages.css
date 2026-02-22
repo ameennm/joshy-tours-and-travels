@@ -1,0 +1,97 @@
+.flow-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.flow-step {
+    margin-bottom: 40px;
+    padding: 30px;
+    background: var(--color-surface);
+    border-radius: 8px;
+    border-left: 4px solid var(--color-primary);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.flow-step h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--color-primary);
+}
+
+.options-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.flow-btn {
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-secondary-white);
+    padding: 12px 24px;
+    box-shadow: none;
+}
+
+.flow-btn:hover,
+.flow-btn.selected {
+    background: var(--color-primary);
+    color: var(--color-secondary-black);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(189, 147, 68, 0.3);
+}
+
+.animate-in {
+    animation: slideDown 0.4s ease forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.flow-result {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, rgba(189, 147, 68, 0.1) 0%, rgba(0, 0, 0, 0.8) 100%);
+    border: 1px solid var(--color-primary);
+    border-radius: 8px;
+}
+
+.result-details {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: left;
+    display: inline-block;
+    min-width: 300px;
+}
+
+.result-details p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 5px;
+}
+
+.result-details strong {
+    color: var(--color-primary);
+}
+
+.result-enquiry {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reset-btn {
+    margin-top: 40px;
+}

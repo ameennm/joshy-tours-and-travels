@@ -1,0 +1,81 @@
+.page-header {
+    padding: 150px 5% 80px;
+    text-align: center;
+    background-color: var(--color-surface);
+    border-bottom: 1px solid rgba(189, 147, 68, 0.2);
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+.fleet-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.vehicle-card {
+    background: var(--color-surface);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition-smooth);
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(189, 147, 68, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.vehicle-image {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.vehicle-category {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--color-primary);
+    color: var(--color-secondary-black);
+    padding: 5px 15px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.vehicle-details {
+    padding: 30px;
+}
+
+.vehicle-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.vehicle-seats {
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.vehicle-desc {
+    color: #aaa;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    min-height: 50px;
+}

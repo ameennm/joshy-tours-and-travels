@@ -1,0 +1,151 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Copperplate Gothic Bold (Fallback to standard serif if not available locally, 
+   but since it's a system font we will use it with fallbacks). 
+   For web safety, we might need a custom font face, but we'll use local references. */
+@font-face {
+  font-family: 'COPPERPLAT';
+  src: local('Copperplate Gothic Bold'), local('Copperplate');
+  font-weight: bold;
+}
+
+/* Global Variables */
+:root {
+  --color-primary: #BD9344;
+  /* Gold Yellow */
+  --color-secondary-black: #000000;
+  --color-secondary-white: #FFFFFF;
+  --color-background: #0a0a0a;
+  --color-surface: #1a1a1a;
+
+  --font-primary: 'COPPERPLAT', 'Copperplate Gothic Bold', serif;
+  --font-secondary: 'Montserrat', sans-serif;
+
+  --transition-smooth: all 0.3s ease-in-out;
+}
+
+/* Reset Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-secondary-white);
+  font-family: var(--font-secondary);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Typography elements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+  color: var(--color-secondary-white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.text-gold {
+  color: var(--color-primary);
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+/* Premium Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--font-secondary);
+  transition: var(--transition-smooth);
+}
+
+.btn-gold {
+  background-color: var(--color-primary);
+  color: var(--color-secondary-black);
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(189, 147, 68, 0.3);
+}
+
+.btn-gold:hover {
+  background-color: #d4a956;
+  box-shadow: 0 6px 20px rgba(189, 147, 68, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+
+.btn-outline-gold:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary-black);
+  box-shadow: 0 4px 15px rgba(189, 147, 68, 0.3);
+}
+
+/* Utilities */
+.section-padding {
+  padding: 80px 5%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Global Mobile Responsiveness */
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 50px 5%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+}
