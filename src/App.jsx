@@ -25,4 +25,10 @@ function App() {
                         <Route path="/contact" element={<Contact />} />
                     </Routes>
                 </main>
-                <Fo
+                <Footer />
+            </div>
+        </Router>
+    );
+}
+
+export default App;
